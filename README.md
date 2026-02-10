@@ -1,59 +1,137 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏢 HRMS - Human Resource Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A full-featured Human Resource Management System (HRMS) built using Laravel 12 with role-based authentication, hierarchical employee management, leave workflows, payroll structure, and project assignment modules.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Backend:** Laravel 12
+- **Authentication:** Laravel Breeze (Blade)
+- **Database:** MySQL
+- **Frontend:** Blade + TailwindCSS
+- **Version Control:** Git & GitHub
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🧱 Core Features Implemented
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 🔐 Authentication & Roles
+- Role-based authentication system
+- Admin middleware protection
+- Role-based login redirection
+- User ↔ Role relationship
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👥 Employee Management
+- Employee linked to User
+- Department assignment
+- Reporting Manager hierarchy
+- Status tracking (Active / Resigned / Terminated)
 
-## Laravel Sponsors
+### 🏢 Department Module
+- Department creation
+- Department-Employee relationship
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 📅 Attendance Module
+- Daily attendance tracking
+- Check-in / Check-out
+- Status (Present / Absent / Half Day / Leave)
 
-### Premium Partners
+### 🌴 Leave Management
+- Leave types
+- Leave request system
+- Multi-level leave approval
+- Pending / Approved / Rejected tracking
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 💰 Payroll Module
+- Monthly payroll structure
+- Salary, bonus, deductions
+- Unique monthly payroll per employee
+- Payment status tracking
 
-## Contributing
+### 📁 Project Management
+- Project creation
+- Employee assignment
+- TL / Member role in projects
+- Assignment tracking
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 📊 Admin Dashboard
+- Total Employees
+- Total Departments
+- Total Projects
+- Pending Leave Requests
+- Role-based dashboard access
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🗂 Database Architecture
 
-## Security Vulnerabilities
+Key Tables:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- users
+- roles
+- departments
+- employees
+- attendance
+- leave_types
+- leave_requests
+- leave_approvals
+- payroll
+- projects
+- project_assignments
 
-## License
+Relational structure follows proper foreign key constraints and normalization principles.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 🛡 Security Implementation
+
+- Mass assignment protection
+- Middleware-based route protection
+- Role-based access control
+- Unique constraints to prevent duplication
+- Proper database indexing
+
+---
+
+## 📌 Project Status
+
+✅ Backend architecture completed  
+✅ Database schema finalized  
+✅ Role-based authentication working  
+✅ Admin dashboard implemented  
+🔄 UI/UX design in progress (Figma phase)  
+🔜 CRUD operations and advanced reporting to be implemented  
+
+---
+
+## 🎯 Future Enhancements
+
+- Employee CRUD management panel
+- Leave approval interface
+- Attendance UI module
+- Payroll calculation automation
+- Role permission matrix
+- API integration (Laravel + React frontend)
+- Reporting & analytics dashboard
+
+---
+
+## 🧠 What This Project Demonstrates
+
+- Real-world HR system architecture
+- Multi-module relational database design
+- Middleware-based access control
+- Scalable backend structure
+- Clean Laravel project organization
+- Git version control discipline
+
+---
+
+## 📬 Author
+
+Balasaravanan S 
+GitHub: https://github.com/Balasad
+
+---
+
