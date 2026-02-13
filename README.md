@@ -73,10 +73,17 @@ Still in progress after completion i will share it.
 - Seeders created
 - Role-based authentication implemented
 
-### Feb 11
+### Feb 12
 - Design system created in Figma
 - Primary button component built
 - GitHub project board configured
+### Feb 13
+
+- Built reusable stats card component
+- Added state variants (Default, Positive, Negative)
+- Applied Auto Layout for scalability
+- Structured dashboard foundation
+
 
 ---
 
