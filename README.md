@@ -84,6 +84,12 @@ Still in progress after completion i will share it.
 - Applied Auto Layout for scalability
 - Structured dashboard foundation
 
+### Feb 14
+- Refactored color system structure
+- Learned correct approach for theme switching
+- Planned Variable-based Light/Dark system
+- Improved component organization
+
 
 ---
 
